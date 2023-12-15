@@ -104,7 +104,10 @@ ajouter la pièce à la request for quotation existante automatiquement.
 
 ## 1. Fil d'Arianne
 
-Barcode -> Scan -> Scan warehouse receipts (Configuration -> Print barcode commands & operation types) -> Scan pièces
+- Purchase -> Purchase orders -> Receive products (et ensuite cliquer sur "Print" pour avoir le "picking receipt");
+- Barcode -> Scan -> Scan warehouse location receipts (Configuration -> Print barcode commands & operation types) -> Scan pièces
+
+Bien expliqué ici: https://www.odoo.com/slides/slide/scanning-order-receipts-and-delivery-orders-694
 
 ## 2. Notes
 
