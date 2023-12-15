@@ -86,7 +86,7 @@ Vous verrez apparaître votre "Purchase -> Request for quotation" avec le prix t
 Si vous l'ouvrez, vous pourrez confirmer la commande en cliquant sur "Confirm Order". De là, vous pouvez
 envoyer la commande au fournisseur par email en cliquant sur "Send by PO Email".
 
-# Créer une commande de pièces par fournisseur
+# A6 - Créer une commande de pièces par fournisseur
 
 ## 1. Fil d'Arianne
 
@@ -99,3 +99,18 @@ créer une request for quotation par fournisseur pour l'ensemble des pièces.
 
 Si un Request for quotation existe et qu'une autre pièce du même fournisseur atteint son seuil minimal, Odoo va
 ajouter la pièce à la request for quotation existante automatiquement.
+
+# A7 - Recevoir les pièces commandées
+
+## 1. Fil d'Arianne
+
+Barcode -> Scan -> Scan warehouse receipts (Configuration -> Print barcode commands & operation types) -> Scan pièces
+
+## 2. Notes
+
+- Pour l'instant, j'ai mis votre numéro V000XX dans le champ barcode, mais comme vous le constaterez, si vous ne changer
+pas de fournisseur, il peut être pratique de mettre le code à barre du fournisseur dans ce champ.
+- Une fois le picking de toutes les pièces complété, vous pouvez cliquer sur "Validate" pour confirmer la réception des pièces.
+- Si vous scanner le code à barre du dessus, la quantité reçue sera automatiquement inscrite (e.g. 200 pièces). Si vous
+scanner le code à barre de la pièce, la quantité reçue sera 1 et vous pourrez ensuite la modifier manuellement. Pratique
+lors des réceptions partielles.
