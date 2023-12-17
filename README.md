@@ -117,3 +117,34 @@ pas de fournisseur, il peut être pratique de mettre le code à barre du fournis
 - Si vous scanner le code à barre du dessus, la quantité reçue sera automatiquement inscrite (e.g. 200 pièces). Si vous
 scanner le code à barre de la pièce, la quantité reçue sera 1 et vous pourrez ensuite la modifier manuellement. Pratique
 lors des réceptions partielles.
+
+# A8 - Gérer les mouvements de stock de pièces sur plusieurs sites
+
+## 1. Fil d'Arianne
+
+Barcode -> Scan -> Scan warehouse location où transférer (Configuration -> Print barcode commands & operation types)
+
+# A9 - Piloter les valeurs
+
+Le pilotage des valeurs se fait dans chaque entité (e.g. Products, Reordering rules, etc.).
+
+# A10 - Gérer les droits d'accès
+
+## 1. Fil d'Arianne
+
+Settings -> Users & Companies -> Users
+
+## 2. Notes
+
+- Vous pouvez créer des utilisateurs et leur donner des droits d'accès à certaines applications (e.g. Inventory, Purchase, etc.)
+- Vous pouvez aussi configurer le 2FA et l'onboarding par après pour envoyer le mail d'invitation à l'utilisateur.
+
+# A11 - 15 - Pouvoir coder dans la plateforme
+
+Voir l'excellent wrapper Python de l'API:
+https://github.com/OCA/odoorpc
+
+Pour implanter la synchro un GMAO externe et Odoo, il faudra avoir un chronographe qui vérifie l'inventaire périodiquement, 
+car il n'y a pas de Webhook pour l'inventaire malheureusement.
+
+
